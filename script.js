@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const targetLang = document.getElementById('targetLang');
     const swapBtn = document.getElementById('swapBtn');
 
-    // Language swap functionality
+    
     swapBtn.addEventListener('click', () => {
         const temp = sourceLang.value;
         sourceLang.value = targetLang.value;
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         outputText.value = input;
     });
 
-    // Translation logic
+    
     translateBtn.addEventListener('click', () => {
         const text = inputText.value.trim();
         const from = sourceLang.value;
