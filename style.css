@@ -1,0 +1,120 @@
+/* Reset & Base Styles */
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #a18cd1, #fbc2eb); /* purple-pink gradient */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 25px;
+    color: #9b59b6; /* nice purple */
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Textareas */
+textarea {
+    width: 100%;
+    height: 120px;
+    margin: 12px 0;
+    padding: 12px;
+    resize: vertical;
+    font-size: 16px;
+    border: 2px solid #b39ddb; /* light purple */
+    border-radius: 12px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #9b59b6;
+    outline: none;
+}
+
+/* Language Select Section */
+.language-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 18px 0;
+}
+
+/* Dropdowns */
+select {
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #b39ddb;
+    background-color: #faf5ff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #9b59b6;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 12px 24px;
+    background: #9b59b6;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 12px rgba(155, 89, 182, 0.4);
+}
+
+button:hover {
+    background: #8e44ad;
+    transform: translateY(-2px);
+}
+
+/* Swap Button Special */
+#swapBtn {
+    font-size: 20px;
+    padding: 10px 16px;
+    background-color: #e1bee7;
+    color: #8e44ad;
+    border: 2px solid #8e44ad;
+}
+
+#swapBtn:hover {
+    background-color: #d1a3e0;
+}
+
+/* Footer / Credits */
+.founder {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #888;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

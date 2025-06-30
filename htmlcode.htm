@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BhashaSetu - The Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="founder">
+            CREATED BY :- ABHISHEK KUMAR GUPTA
+    </div>
+    <div class="container">
+        <h1 >BhashaSetu 🌐  </h1>
+        <h5>The Language Translator......🔁  </h5>
+        <div class="Translator">
+            <textarea id="inputText" placeholder="Enter text to translate...."></textarea>
+
+                <div class="language-select">
+                    <select id="sourceLang">
+                      <option value="hi">Hindi</option>
+                      <option value="bn">Bengali</option>
+                      <option value="ta">Tamil</option>
+                      <option value="te">Telugu</option>
+                      <option value="ml">Malayalam</option>
+                      <option value="gu">Gujarati</option>
+                      <option value="kn">Kannada</option>
+                      <option value="mr">Marathi</option>
+                      <option value="pa">Punjabi</option>
+                      <option value="ur">Urdu</option>
+                      <option value="or">Odia</option>
+                      <option value="as">Assamese</option>
+                      <option value="ne">Nepali</option>
+                      <option value="sd">Sindhi</option>
+                      <option value="en" selected>English</option> <!-- default -->
+                    </select>
+                  
+                    <span>➡</span>
+                  
+                    <select id="targetLang">
+                      <option value="hi">Hindi</option>
+                      <option value="bn">Bengali</option>
+                      <option value="ta">Tamil</option>
+                      <option value="te">Telugu</option>
+                      <option value="ml">Malayalam</option>
+                      <option value="gu">Gujarati</option>
+                      <option value="kn">Kannada</option>
+                      <option value="mr">Marathi</option>
+                      <option value="pa">Punjabi</option>
+                      <option value="ur">Urdu</option>
+                      <option value="or">Odia</option>
+                      <option value="as">Assamese</option>
+                      <option value="ne">Nepali</option>
+                      <option value="sd">Sindhi</option>
+                      <option value="en" selected>English</option>
+                    </select>
+                  </div>
+                  
+
+            </div>
+
+            <button id="translateButton">Translate</button>
+
+            <button id="swapBtn">🔁 Swap Languages</button>
+
+
+            <textarea id ="outputText" placeholder="Translation appears here..." readonly></textarea>
+
+
+
+            <script src="script.js">   </script>
+        </div>
+    </div>
+</body>
+</html>
